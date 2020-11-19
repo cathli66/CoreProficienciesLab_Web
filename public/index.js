@@ -47,20 +47,6 @@ app.get('/pollres', function(req, res) {
     
 });
 
-data = [
-    {
-        'gender' : 'Male',
-        'votes' : 2
-    },
-    {
-        'gender' : 'Female',
-        'votes' : 3
-    },
-    {
-        'gender' : 'Other',
-        'votes' : 1
-    }
-]
 
 app.get('/volley', function(req, res) {
     var g_id = req.query.gender;
