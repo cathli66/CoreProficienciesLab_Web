@@ -1,0 +1,60 @@
+<html>
+<head>
+    <title>Gender Poll</title>
+        <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- 
+         IMPORTANT ITEM #1 - THIS MUST BE IN THE HEADER.
+         THIS IS THE CORE BOOTSTRAP CSS FROM A CDN
+     --> 
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Open+Sans:100italic,400italic,700italic,100,400,700"/>
+
+</head>
+
+<body>
+    
+<div style="margin: 100px;">
+    <table border="2" style="background-color: #f2f0f4; padding: 10px;">
+    <tr>
+        <th>Gender</th>
+        <th>Votes</th>
+    </tr>
+        <tr>
+            <td>Male</td>
+            <td>{{males}}</td>
+        </tr>
+        <tr>
+            <td>Female</td>
+            <td>{{females}}</td>
+        </tr>
+        <tr>
+            <td>Other</td>
+            <td>{{other}}</td>
+        </tr>
+    </table>
+</div>
+
+<div style="text-align: center;">
+    <form id="the_form" action="pollres" method="get">
+      <p>Please select your gender: </p>
+      <input type="radio" name="gender" value="1"> Male<br>
+      <input type="radio" name="gender" value="2"> Female<br>
+      <input type="radio" name="gender" value="3"> Other<br>
+      <button type="submit">Submit</button>
+    </form>
+</div>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js" async></script>
+
+<script type="text/javascript">
+    
+</script>
+    {{!--<script src="https://code.jquery.com/jquery-3.2.1.min.js" crossorigin="anonymous"></script>--}}
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+</body>
+</html>
